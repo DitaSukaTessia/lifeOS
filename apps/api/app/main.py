@@ -10,6 +10,8 @@ from app.core.redis import close_redis
 from app.routers import health
 from app.modules.trading import router as trading_router
 from app.modules.genshin import router as genshin_router
+from app.modules.cyber_lab import router as cyber_lab_router
+from app.modules.exploit_lab import router as exploit_lab_router
 
 log = logging.getLogger(__name__)
 
@@ -39,3 +41,5 @@ app.add_middleware(
 app.include_router(health.router, prefix="/api/v1")
 app.include_router(trading_router, prefix="/api/v1")
 app.include_router(genshin_router, prefix="/api/v1")
+app.include_router(cyber_lab_router, prefix="/api/v1")
+app.include_router(exploit_lab_router, prefix="/api/v1")

@@ -17,5 +17,13 @@ class Settings(BaseSettings):
     # CORS — comma-separated origins
     cors_origins: list[str] = ["http://localhost:3000"]
 
+    # AI Providers
+    groq_api_key: str = ""
+    gemini_api_key: str = ""
+
+    # Voice Providers (optional — browser TTS is the default)
+    elevenlabs_api_key: str = ""
+    openai_api_key: str = ""
+
 
 settings = Settings()

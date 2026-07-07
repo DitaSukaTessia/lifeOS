@@ -34,7 +34,11 @@
       "Bash(.venv/bin/uvicorn app.main:app --reload --port 8001)",
       "Bash(pnpm exec *)",
       "Bash(python -c \"from app.modules.cyber_lab import router; print\\('OK:', router\\)\")",
-      "Bash(python3 -c \"from app.modules.cyber_lab import router; print\\('OK:', router\\)\")"
+      "Bash(python3 -c \"from app.modules.cyber_lab import router; print\\('OK:', router\\)\")",
+      "Skill(claude-api)",
+      "Bash(pip install *)",
+      "Bash(grep -E '\\\\.\\(tsx|ts\\)$')",
+      "Bash(npx next *)"
     ]
   }
 }
